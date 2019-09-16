@@ -1,0 +1,47 @@
+{
+  "name": "jest-supertest-api-framework",
+  "version": "1.0.0",
+  "description": "jest supertest API framework",
+  "main": "./helpers/db/mssql-db.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "cross-env NODE_ENV=test &&jest --config jest.config.js",
+    "json:server": "json-server --watch ./src/db.json",
+    "allureReport": "allure serve ./allure-results"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.5.5",
+    "@types/jest": "^24.0.18",
+    "@types/supertest": "^2.0.8",
+    "babel-jest": "^24.9.0",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^5.2.1",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "jest": "^24.9.0",
+    "jest-allure": "^0.1.1",
+    "jest-json-schema": "^2.0.0",
+    "json-server": "^0.15.1",
+    "mssql": "^5.1.0",
+    "prettier": "^1.13.7",
+    "supertest": "^3.1.0"
+  },
+  "dependencies": {
+    "allure": "0.0.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "jest": "^24.9.0",
+    "jest-cli": "^24.9.0",
+    "superagent": "^5.1.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
